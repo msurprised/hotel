@@ -124,6 +124,7 @@ export const SecondBtn = styled.div`
     display: flex;
     flex-direction: row;
     align-items: center;
+    transition: 0.1s ease;
 
     &:hover {
         cursor: pointer;

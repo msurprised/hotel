@@ -7,6 +7,7 @@ export const SidebarContainer = styled.aside`
     width: 100%;
     height: 100%;
     background-color: #EAEFF6;
+    color: #597193;
     z-index: 1000;
     display: flex;
     flex-direction: column;
@@ -18,6 +19,22 @@ export const SidebarContainer = styled.aside`
 `;
 
 export const SidebarContent = styled.div`
+    position: relative;
+`;
+
+export const CloseBtn = styled.div`
+    position: absolute;
+    top: -60px;
+    right: -60px;
+    transition: 0.1s ease;
+    font-size: 20px;
+    font-weight: bold;
+
+    &:hover {
+        cursor: pointer;
+        transform: rotate(90deg);
+        color: rgba(222, 222, 225, 0.74);
+    }
 `;
 
 export const SidebarUl = styled.ul`
@@ -27,7 +44,6 @@ export const SidebarUl = styled.ul`
 
 export const SidebarLi = styled.li`
     list-style: none;
-    color: #597193;
     font-size: 26px;
     font-weight: 600;
     text-align: center;

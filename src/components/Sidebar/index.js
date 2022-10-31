@@ -1,10 +1,11 @@
 import React from 'react';
-import {SidebarContainer, SidebarContent, SidebarUl, SidebarLi} from './SidebarElements'
+import {SidebarContainer, SidebarContent, SidebarUl, CloseBtn, SidebarLi} from './SidebarElements'
 
 const Sidebar = ({isSidebarOpen, toggle} ) => {
   return (
     <SidebarContainer isSidebarOpen={isSidebarOpen}>
         <SidebarContent>
+          <CloseBtn onClick={toggle}>╳</CloseBtn>
             <SidebarUl>
                 <SidebarLi onClick={toggle}>Hotel</SidebarLi>
                 <SidebarLi onClick={toggle}>Branch</SidebarLi>
